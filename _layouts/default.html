@@ -9,8 +9,11 @@
   <body>
     <header class="site-header">
       <div class="logo-block">
-        <div class="logo-text">{{ site.title }}</div>
-        <div class="tagline">{{ site.description }}</div>
+        <img src="{{ '/profile.png' | relative_url }}" alt="Profile avatar" class="logo-avatar" />
+        <div class="logo-meta">
+          <div class="logo-text">{{ site.title }}</div>
+          <div class="tagline">{{ site.description }}</div>
+        </div>
       </div>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
