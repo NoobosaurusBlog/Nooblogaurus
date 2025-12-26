@@ -9,9 +9,9 @@ layout: default
 <p>Security tinkerer, OSINT enthusiast, and builder of scrappy tooling. This site collects the scripts and cheat sheets I keep coming back to.</p>
 </div>
 
-<div class="panel" style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;">
-  <img src="{{ '/profile.png' | relative_url }}" alt="Profile photo" style="width:140px;height:140px;border-radius:50%;border:2px solid var(--accent);object-fit:cover;box-shadow:0 0 18px rgba(82,255,115,0.45);" />
-  <div>
+<div class="panel profile-panel">
+  <img src="{{ '/profile.png' | relative_url }}" alt="Profile photo" class="profile-avatar" />
+  <div class="profile-links">
     <p>Elsewhere on the internet:</p>
     <ul>
       <li><a href="https://noobosaurusr3x.fr/" target="_blank" rel="noopener">Personal website</a></li>
