@@ -1,0 +1,17 @@
+title: Blogosaurus
+description: "A hacker-friendly showroom for the NooboTools collection."
+baseurl: ""
+url: ""
+markdown: kramdown
+highlighter: rouge
+theme: null
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

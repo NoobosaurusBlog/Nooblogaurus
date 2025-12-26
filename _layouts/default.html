@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-block">
+        <div class="logo-text">{{ site.title }}</div>
+        <div class="tagline">{{ site.description }}</div>
+      </div>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/resources/' | relative_url }}">Cheat Sheets</a>
+        {% for doc in site.tools %}
+          <a href="{{ doc.url | relative_url }}">{{ doc.short_title | default: doc.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+    <main class="content-area">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>Forged by Noobosaurus • <span class="blink">[ OK ]</span></p>
+    </footer>
+  </body>
+</html>
