@@ -14,7 +14,7 @@ permalink: /cheat-sheets/smbclient/
 
 ---
 
-## 2. Basic Usage**
+## 2. Basic Usage
 
 ### General Syntax
 ```bash
