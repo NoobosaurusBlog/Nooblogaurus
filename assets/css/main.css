@@ -50,6 +50,7 @@ body {
   border: 2px solid var(--accent);
   object-fit: cover;
   box-shadow: 0 0 12px rgba(82, 255, 115, 0.35);
+  flex-shrink: 0;
 }
 
 .logo-meta {
