@@ -23,6 +23,7 @@ smbclient [options] //<server>/<share>
 Replace `server` with the name or IP address of the server hosting the file share, and `share` with the name of the file share.
 
 You will be prompted for your username and password for the file share. Once authenticated, you will be presented with a command prompt where you can enter various commands to interact with the file share.
+
 ### Common Options
 | **Option**          | **Description**                                                                 |
 |---------------------|---------------------------------------------------------------------------------|

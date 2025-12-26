@@ -23,6 +23,7 @@ hashcat [options] <hashfile> <wordlist|mask>
 ```
 
 ### Common Options
+
 | **Option** | **Description** |
 | --- | --- |
 | `-m <hash_type>` | Specify the hash type (e.g., `0` for MD5, `1000` for NTLM).                     |
