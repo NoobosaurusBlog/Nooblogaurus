@@ -1,5 +1,5 @@
 title: Blogosaurus
-description: "A hacker-friendly showroom for the NooboTools collection."
+description: "Personal NooboTools notes and utilities—shared in case they're useful."
 baseurl: "/Nooblogaurus"
 url: "https://noobosaurusblog.github.io"
 markdown: kramdown

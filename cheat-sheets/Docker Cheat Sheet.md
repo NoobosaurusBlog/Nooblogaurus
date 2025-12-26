@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Docker Cheat Sheet
+permalink: /cheat-sheets/docker/
 ---
 
 # Docker Cheat Sheet  

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ffuf Cheat Sheet
+permalink: /cheat-sheets/ffuf/
 ---
 
 # FFUF Cheat Sheet

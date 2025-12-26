@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hydra Cheat Sheet
+permalink: /cheat-sheets/hydra/
 ---
 
 # Hydra Cheat Sheet  

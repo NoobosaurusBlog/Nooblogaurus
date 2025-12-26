@@ -1,6 +1,7 @@
 ---
 layout: default
 title: nmap Cheat Sheet
+permalink: /cheat-sheets/nmap/
 ---
 
 #nmap

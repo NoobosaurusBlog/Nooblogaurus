@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hashcat Cheat Sheet
+permalink: /cheat-sheets/hashcat/
 ---
 
 # Hashcat Cheat Sheet

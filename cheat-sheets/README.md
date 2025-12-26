@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cheat Sheets Overview
+permalink: /cheat-sheets/
 ---
 
 # Cheat sheets

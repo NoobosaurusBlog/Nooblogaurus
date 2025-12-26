@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SMBMap Cheat Sheet
+permalink: /cheat-sheets/smbmap/
 ---
 
 # SMBMap Cheat Sheet  

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Tshark Cheat Sheet
+permalink: /cheat-sheets/tshark/
 ---
 
 # Tshark Cheat Sheet  

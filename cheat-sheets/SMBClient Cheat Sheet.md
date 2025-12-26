@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SMBClient Cheat Sheet
+permalink: /cheat-sheets/smbclient/
 ---
 
 # smbclient Cheat Sheet  
