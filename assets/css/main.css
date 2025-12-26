@@ -152,6 +152,7 @@ hr {
 table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 table, th, td {
@@ -160,6 +161,8 @@ table, th, td {
 
 th, td {
   padding: 0.5rem;
+  text-align: left;
+  word-break: break-word;
 }
 
 a {
