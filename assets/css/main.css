@@ -40,15 +40,7 @@ body {
 .logo-block {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
-}
-
-.logo-avatar {
-  width: 130px;
-  height: 130px;
-  border-radius: 16px;
-  object-fit: cover;
-  display: block;
+  gap: 1rem;
 }
 
 .logo-meta {
@@ -56,7 +48,6 @@ body {
   flex-direction: column;
   gap: 0.4rem;
   justify-content: center;
-  min-height: 130px;
 }
 
 .logo-text {
