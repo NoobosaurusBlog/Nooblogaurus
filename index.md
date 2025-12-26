@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="panel">
-<h1>&gt; Booting Nooblogosaurus...</h1>
+<h1>&gt; Booting Nooblogaurus...</h1>
 <p>Just parking the tools and notes I'm tinkering with so they're easy to find (for me and anyone else who needs them). Nothing flashy. Each link points straight to source, docs, and examples.</p>
 <p>If something helps you, awesome. If not, that’s cool too.</p>
 </div>

@@ -6,7 +6,7 @@ layout: default
 
 <div class="panel">
 <h1>// Tools</h1>
-<p>Everything in one place. These are the utilities currently bundled with Nooblogosaurus.</p>
+<p>Everything in one place. These are the utilities currently bundled with Nooblogaurus.</p>
 </div>
 
 <div class="panel">
