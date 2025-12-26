@@ -5,6 +5,8 @@ url: "https://noobosaurusblog.github.io"
 markdown: kramdown
 highlighter: rouge
 theme: null
+kramdown:
+  input: GFM
 collections:
   tools:
     output: true

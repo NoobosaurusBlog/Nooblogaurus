@@ -4,7 +4,7 @@ title: Tshark Cheat Sheet
 permalink: /cheat-sheets/tshark/
 ---
 
-# Tshark Cheat Sheet  
+# Tshark Cheat Sheet
 *Command-Line Network Protocol Analyzer*
 
 ---
@@ -87,14 +87,14 @@ Display filters refine the view of a capture file. They use Wireshark’s filter
 ## Advanced Options & Techniques
 
 ### Ring Buffer Capture
-Capture continuously while splitting output into multiple files.  
+Capture continuously while splitting output into multiple files.
 ```bash
 sudo tshark -i eth0 -b filesize:102400 -b files:5 -w capture.pcap
 ```
 - *Explanation*: Each file is limited to 100MB; a maximum of 5 files are kept.
 
 ### TLS Decryption
-Capture and decrypt TLS sessions using a key log file.  
+Capture and decrypt TLS sessions using a key log file.
 ```bash
 sudo tshark -i eth0 -o tls.keylog_file:tls_keys.log -w tls_capture.pcap
 ```
@@ -116,12 +116,12 @@ tshark -r capture.pcap -T fields -e ip.src -e ip.dst -e tcp.port
 
 ### Generating Statistics
 Gather I/O statistics or conversation summaries.
-- **I/O Statistics**:  
+- **I/O Statistics**:
   ```bash
   tshark -r capture.pcap -z io,stat,5
   ```
   *Explanation*: Provides stats in 5-second intervals.
-- **Conversation Summary**:  
+- **Conversation Summary**:
   ```bash
   tshark -r capture.pcap -qz conv,ip
   ```
@@ -135,120 +135,120 @@ Gather I/O statistics or conversation summaries.
 
 **HTTP and TLS Traffic**
 
-- **Capture TCP Traffic on Port 80**  
+- **Capture TCP Traffic on Port 80**
   ```bash
   sudo tshark -i eth0 -f "tcp port 80" -w http_traffic.pcap
-  ```  
+  ```
   *Captures HTTP traffic on port 80.*
 
-- **Capture HTTPS Traffic with TLS Decryption**  
+- **Capture HTTPS Traffic with TLS Decryption**
   ```bash
   sudo tshark -i eth0 -o tls.keylog_file:tls_keys.log -Y "tls" -w https_traffic.pcap
-  ```  
+  ```
   *Uses a TLS key log file to déchiffrer HTTPS traffic.*
 
-- **Analyze HTTP Requests and Extract Fields**  
+- **Analyze HTTP Requests and Extract Fields**
   ```bash
   tshark -r capture.pcap -Y "http.request" -T fields -e http.request.method -e http.request.uri -e http.host
-  ```  
+  ```
   *Extracts request methods, URIs, and host headers from HTTP traffic.*
 
-- **Extract HTTP Host Header**  
+- **Extract HTTP Host Header**
   ```bash
   tshark -r capture.pcap -Y "http.request" -T fields -e http.host
-  ```  
+  ```
 
 ---
 
 **DNS Traffic**
 
-- **Capture DNS Traffic**  
+- **Capture DNS Traffic**
   ```bash
   sudo tshark -i eth0 -f "udp port 53" -w dns_traffic.pcap
-  ```  
+  ```
 
-- **Analyze DNS Responses**  
+- **Analyze DNS Responses**
   ```bash
   tshark -r capture.pcap -Y "dns.flags.response == 1" -T fields -e dns.qry.name
-  ```  
+  ```
   *Extracts queried domain names from DNS responses.*
 
 ---
 
 **VoIP and Multimedia Traffic**
 
-- **Capture and Analyze VoIP Traffic (SIP)**  
+- **Capture and Analyze VoIP Traffic (SIP)**
   ```bash
   sudo tshark -i eth0 -f "sip" -w voip_traffic.pcap
-  ```  
+  ```
   *Captures SIP traffic for VoIP call analysis.*
 
-- **Capture Multicast Traffic**  
+- **Capture Multicast Traffic**
   ```bash
   sudo tshark -i eth0 -f "multicast" -w multicast_traffic.pcap
-  ```  
+  ```
 
 ---
 
 **Network Monitoring and Troubleshooting**
 
-- **Monitor ARP Traffic**  
+- **Monitor ARP Traffic**
   ```bash
   sudo tshark -i eth0 -f "arp" -w arp_traffic.pcap
-  ```  
+  ```
 
-- **Capture ICMP Traffic**  
+- **Capture ICMP Traffic**
   ```bash
   sudo tshark -i eth0 -f "icmp" -w icmp_traffic.pcap
-  ```  
+  ```
 
-- **Analyze TCP Retransmissions**  
+- **Analyze TCP Retransmissions**
   ```bash
   tshark -r capture.pcap -Y "tcp.analysis.retransmission"
-  ```  
+  ```
 
 ---
 
 **Other Protocols**
 
-- **Analyze FTP Traffic**  
+- **Analyze FTP Traffic**
   ```bash
   sudo tshark -i eth0 -f "ftp" -w ftp_traffic.pcap
-  ```  
+  ```
 
-- **Capture and Analyze SMTP Traffic**  
+- **Capture and Analyze SMTP Traffic**
   ```bash
   sudo tshark -i eth0 -f "smtp" -w smtp_traffic.pcap
-  ```  
+  ```
 
-- **Capture and Analyze DHCP Traffic**  
+- **Capture and Analyze DHCP Traffic**
   ```bash
   sudo tshark -i eth0 -f "dhcp" -w dhcp_traffic.pcap
-  ```  
+  ```
 
-- **Capture and Analyze NTP Traffic**  
+- **Capture and Analyze NTP Traffic**
   ```bash
   sudo tshark -i eth0 -f "ntp" -w ntp_traffic.pcap
-  ```  
+  ```
 
-- **Analyze SMB Traffic**  
+- **Analyze SMB Traffic**
   ```bash
   sudo tshark -i eth0 -f "smb" -w smb_traffic.pcap
-  ```  
+  ```
 
 ---
 
 **Advanced Output and Filtering Options**
 
-- **Disable DNS Resolution for Faster Capture**  
+- **Disable DNS Resolution for Faster Capture**
   ```bash
   sudo tshark -i eth0 -n -w capture_no_resolve.pcap
-  ```  
+  ```
 
-- **Export Output as JSON**  
+- **Export Output as JSON**
   ```bash
   tshark -r capture.pcap -T json > capture.json
-  ```  
+  ```
 
 
 ---
@@ -256,4 +256,4 @@ Gather I/O statistics or conversation summaries.
 ## 8. Additional Resources
 
 
-- [Tshark Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html) 
+- [Tshark Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html)

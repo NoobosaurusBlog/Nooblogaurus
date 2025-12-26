@@ -20,27 +20,27 @@ ffuf -c -w /path/to/wordlist -u https://target/FUZZ
 
 ## **2. Common Flags**
 
-|**Flag**|**Description**|
-|---|---|
-|`-t <threads>`|Number of threads (default 40)|
-|`-mc`|Match response codes (e.g., `200`, `403`, `all`)|
-|`-fc`|Filter out response codes (e.g., `-fc 401`)|
-|`-fs <size>`|Filter by response size in bytes|
-|`-fw <count>`|Filter by the number of words|
-|`-fl <count>`|Filter by the number of lines|
-|`-p <secs>`|Delay between requests (e.g., `-p 0.1`)|
-|`-maxtime`|Maximum total scan time in seconds|
-|`-s`|Silent mode|
-|`-v`|Verbose mode|
-|`-H <header>`|Add custom header (e.g., `-H "Host: FUZZ"`)|
-|`-r`|Follow redirects|
-|`-recursion`|Enable recursion|
-|`-b <cookie>`|Cookies (e.g., `-b "PHPSESSID=XYZ"`)|
-|`-o <file>`|Output results to a file|
-|`-of <fmt>`|Output format (`json`, `html`, `md`, `csv`, etc.)|
-|`-fr <regex>`|Filter out responses containing a regex (e.g., `-fr "error|
-|`-mr <regex>`|Match responses containing a regex (inverse of `-fr`)|
-|`-ic`|Ignore worlists comments|
+| **Flag** | **Description** |
+| --- | --- |
+| `-t <threads>` | Number of threads (default 40) |
+| `-mc` | Match response codes (e.g., `200`, `403`, `all`) |
+| `-fc` | Filter out response codes (e.g., `-fc 401`) |
+| `-fs <size>` | Filter by response size in bytes |
+| `-fw <count>` | Filter by the number of words |
+| `-fl <count>` | Filter by the number of lines |
+| `-p <secs>` | Delay between requests (e.g., `-p 0.1`) |
+| `-maxtime` | Maximum total scan time in seconds |
+| `-s` | Silent mode |
+| `-v` | Verbose mode |
+| `-H <header>` | Add custom header (e.g., `-H "Host: FUZZ"`) |
+| `-r` | Follow redirects |
+| `-recursion` | Enable recursion |
+| `-b <cookie>` | Cookies (e.g., `-b "PHPSESSID=XYZ"`) |
+| `-o <file>` | Output results to a file |
+| `-of <fmt>` | Output format (`json`, `html`, `md`, `csv`, etc.) |
+| `-fr <regex>` | Filter out responses containing a regex (e.g., `-fr "error"`) |
+| `-mr <regex>` | Match responses containing a regex (inverse of `-fr`) |
+| `-ic` | Ignore wordlists comments |
 
 ---
 
@@ -136,24 +136,24 @@ ffuf -w wordlist.txt \
 SecLists provides a large variety of wordlists:
 
 - **Directory/Endpoints**:
-    
+
     - `Discovery/Web-Content/common.txt`
     - `Discovery/Web-Content/directory-list-2.3-small.txt`
     - `Discovery/Web-Content/raft-medium-directories-lowercase.txt`
 - **Subdomains**:
-    
+
     - `Discovery/DNS/fierce-hostlist.txt`
     - `Discovery/DNS/subdomains-top1million-110000.txt`
 - **Parameters**:
-    
+
     - `Discovery/Web-Content/burp-parameter-names.txt`
     - `Fuzzing/parameter_names.txt`
 - **VHosts / Virtual Hosts**:
-    
+
     - `Discovery/DNS/vhosts.txt`
     - `Discovery/DNS/virtualhosts.txt`
 - **Passwords / Usernames**:
-    
+
     - `Passwords/Common-Credentials/10k-most-common.txt`
     - `Usernames/top-usernames-shortlist.txt`
 

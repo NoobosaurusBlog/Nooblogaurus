@@ -23,8 +23,8 @@ hashcat [options] <hashfile> <wordlist|mask>
 ```
 
 ### Common Options
-| **Option**       | **Description**                                                                 |
-|------------------|---------------------------------------------------------------------------------|
+| **Option** | **Description** |
+| --- | --- |
 | `-m <hash_type>` | Specify the hash type (e.g., `0` for MD5, `1000` for NTLM).                     |
 | `-a <attack_mode>` | Specify the attack mode (e.g., `0` for dictionary, `3` for brute-force).       |
 | `-o <output_file>` | Save cracked hashes to a file.                                                |
