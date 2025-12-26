@@ -178,3 +178,16 @@ a.button:hover {
   background: var(--accent);
   color: #000;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.panel img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 8px rgba(82, 255, 115, 0.3);
+}
