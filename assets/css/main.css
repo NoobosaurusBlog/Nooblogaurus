@@ -37,19 +37,13 @@ body {
   z-index: 10;
 }
 
-.logo-block {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.logo-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(82, 255, 115, 0.3);
+header .logo-block img {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--accent) !important;
+  object-fit: cover !important;
+  box-shadow: 0 0 10px rgba(82, 255, 115, 0.3) !important;
 }
 
 .logo-meta {
