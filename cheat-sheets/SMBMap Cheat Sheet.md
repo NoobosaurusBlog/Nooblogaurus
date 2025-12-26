@@ -22,21 +22,29 @@ smbmap [options] -H <IP>
 
 ### Common Flags
 
-| **Flag**             | **Description**                                                                 |
-|----------------------|---------------------------------------------------------------------------------|
-| `-H <IP>`            | Target IP address                                                              |
-| `-u <user>`          | Username (use `-u ''` for null session)                                         |
-| `-p <password>`      | Password                                                                        |
-| `-d <domain>`        | Domain/workgroup (use `.` for local workgroup)                                  |
-| `-s <share>`         | Specific share to target                                                        |
-| `-P <port>`          | Custom SMB port (default: 445)                                                  |
-| `-x <command>`       | Execute a command on the target                                                |
-| `-R`                 | Recursive directory listing (with read permissions)                             |
-| `--download <file>`  | Download a file from the share                                                  |
-| `--upload <src> <dst>` | Upload a file to the share                                                     |
-| `--users`            | Enumerate users                                                                 |
-| `--admin`            | Check if user has admin access                                                  |
-| `-v`                 | Verbose output                                                                  |
+<table>
+  <thead>
+    <tr>
+      <th>Flag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>-H &lt;IP&gt;</code></td><td>Target IP address.</td></tr>
+    <tr><td><code>-u &lt;user&gt;</code></td><td>Username (use <code>-u ''</code> for null session).</td></tr>
+    <tr><td><code>-p &lt;password&gt;</code></td><td>Password.</td></tr>
+    <tr><td><code>-d &lt;domain&gt;</code></td><td>Domain/workgroup (use <code>.</code> for local workgroup).</td></tr>
+    <tr><td><code>-s &lt;share&gt;</code></td><td>Specific share to target.</td></tr>
+    <tr><td><code>-P &lt;port&gt;</code></td><td>Custom SMB port (default: 445).</td></tr>
+    <tr><td><code>-x &lt;command&gt;</code></td><td>Execute a command on the target.</td></tr>
+    <tr><td><code>-R</code></td><td>Recursive directory listing (with read permissions).</td></tr>
+    <tr><td><code>--download &lt;file&gt;</code></td><td>Download a file from the share.</td></tr>
+    <tr><td><code>--upload &lt;src&gt; &lt;dst&gt;</code></td><td>Upload a file to the share.</td></tr>
+    <tr><td><code>--users</code></td><td>Enumerate users.</td></tr>
+    <tr><td><code>--admin</code></td><td>Check if the user has admin access.</td></tr>
+    <tr><td><code>-v</code></td><td>Verbose output.</td></tr>
+  </tbody>
+</table>
 
 ---
 

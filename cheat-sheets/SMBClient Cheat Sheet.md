@@ -25,18 +25,27 @@ Replace `server` with the name or IP address of the server hosting the file sh
 You will be prompted for your username and password for the file share. Once authenticated, you will be presented with a command prompt where you can enter various commands to interact with the file share.
 
 ### Common Options
-| **Option**          | **Description**                                                                 |
-|---------------------|---------------------------------------------------------------------------------|
-| `-U <user>[%pass]`  | Username and password (e.g., `-U admin%Password123`).                           |
-| `-W <domain>`       | Workgroup/domain name (default: `WORKGROUP`).                                   |
-| `-I <IP>`           | Server IP address (bypasses DNS).                                               |
-| `-p <port>`         | Custom port (default: 445 for SMB over TCP/IP).                                 |
-| `-N`                | No password prompt (use with empty or guest access).                            |
-| `-E`                | Hide password prompt output.                                                    |
-| `-c <command>`      | Execute a command non-interactively (e.g., `-c 'ls'`).                          |
-| `-A <creds-file>`   | Load credentials from a file (format: `username = admin`, `password = pass`).   |
-| `-m <max-protocol>` | Set max SMB protocol (e.g., `-m SMB3`).                                         |
-| `-d <debug-level>`  | Debug verbosity (0-10).                                                         |
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>-U &lt;user&gt;[%pass]</code></td><td>Username and password (e.g., <code>-U admin%Password123</code>).</td></tr>
+    <tr><td><code>-W &lt;domain&gt;</code></td><td>Workgroup/domain name (default: <code>WORKGROUP</code>).</td></tr>
+    <tr><td><code>-I &lt;IP&gt;</code></td><td>Server IP address (bypasses DNS).</td></tr>
+    <tr><td><code>-p &lt;port&gt;</code></td><td>Custom port (default: 445 for SMB over TCP/IP).</td></tr>
+    <tr><td><code>-N</code></td><td>No password prompt (use with empty or guest access).</td></tr>
+    <tr><td><code>-E</code></td><td>Hide password prompt output.</td></tr>
+    <tr><td><code>-c &lt;command&gt;</code></td><td>Execute a command non-interactively (e.g., <code>-c 'ls'</code>).</td></tr>
+    <tr><td><code>-A &lt;creds-file&gt;</code></td><td>Load credentials from a file.</td></tr>
+    <tr><td><code>-m &lt;max-protocol&gt;</code></td><td>Set max SMB protocol (e.g., <code>-m SMB3</code>).</td></tr>
+    <tr><td><code>-d &lt;debug-level&gt;</code></td><td>Debug verbosity (0-10).</td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -44,22 +53,30 @@ You will be prompted for your username and password for the file share. Once aut
 
 Once connected, use these commands:
 
-| **Command** | **Description** |
-| --- | --- |
-| `ls` | List files/directories. |
-| `cd <dir>` | Change directory. |
-| `get <file>` | Download a file. |
-| `put <file>` | Upload a file. |
-| `mget <pattern>` | Download multiple files (e.g., `mget *.txt`). |
-| `mput <pattern>` | Upload multiple files. |
-| `rm <file>` | Delete a file. |
-| `mkdir <dir>` | Create a directory. |
-| `rmdir <dir>` | Delete a directory. |
-| `pwd` | Print current directory. |
-| `recurse` | Toggle recursive mode for `mget`/`mput`. |
-| `mask <filter>` | Set a file filter (e.g., `mask *.docx`). |
-| `tar` | Create/extract tar backups (e.g., `tar c backup.tar *`). |
-| `exit` | Quit smbclient. |
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>ls</code></td><td>List files/directories.</td></tr>
+    <tr><td><code>cd &lt;dir&gt;</code></td><td>Change directory.</td></tr>
+    <tr><td><code>get &lt;file&gt;</code></td><td>Download a file.</td></tr>
+    <tr><td><code>put &lt;file&gt;</code></td><td>Upload a file.</td></tr>
+    <tr><td><code>mget &lt;pattern&gt;</code></td><td>Download multiple files (e.g., <code>mget *.txt</code>).</td></tr>
+    <tr><td><code>mput &lt;pattern&gt;</code></td><td>Upload multiple files.</td></tr>
+    <tr><td><code>rm &lt;file&gt;</code></td><td>Delete a file.</td></tr>
+    <tr><td><code>mkdir &lt;dir&gt;</code></td><td>Create a directory.</td></tr>
+    <tr><td><code>rmdir &lt;dir&gt;</code></td><td>Delete a directory.</td></tr>
+    <tr><td><code>pwd</code></td><td>Print current directory.</td></tr>
+    <tr><td><code>recurse</code></td><td>Toggle recursive mode for <code>mget</code>/<code>mput</code>.</td></tr>
+    <tr><td><code>mask &lt;filter&gt;</code></td><td>Set a file filter (e.g., <code>mask *.docx</code>).</td></tr>
+    <tr><td><code>tar</code></td><td>Create/extract tar backups (e.g., <code>tar c backup.tar *</code>).</td></tr>
+    <tr><td><code>exit</code></td><td>Quit smbclient.</td></tr>
+  </tbody>
+</table>
 
 ---
 
