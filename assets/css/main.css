@@ -246,22 +246,6 @@ img {
   gap: 1rem;
 }
 
-.profile-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.profile-tag {
-  border: 1px solid var(--accent);
-  padding: 0.15rem 0.5rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background: rgba(82, 255, 115, 0.12);
-}
-
 .profile-actions {
   display: flex;
   flex-wrap: wrap;

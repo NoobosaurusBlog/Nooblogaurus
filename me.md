@@ -6,8 +6,9 @@ layout: default
 
 <div class="panel">
   <h1>// Noobosaurus R3x</h1>
-  <p>Security tinkerer, OSINT enthusiast, and builder of scrappy tooling. Blogosaurus is my lab notebook for the scripts, cheat sheets, and utilities that survive real-world use.</p>
-  <p>I map attack surfaces for fun, automate the boring recon, and share the outputs so smaller teams don't have to start from zero.</p>
+  <p>L3 H4ck3r L3 Plu5 n00b Du w3b. I do bug bounty, recon, OSINT, CTFs, and occasional LLM chaos.</p>
+  <p>Nooblogaurus is my “take notes” dump: the scripts, cheat sheets, and little terminal tools that actually work… even if the code is a crime scene.</p>
+  <p>I map attack surfaces for fun, automate the boring recon so I can break things faster, and share whatever survives so you can skip the painful part and start with a head start.</p>
 </div>
 
 <div class="panel profile-hero">
@@ -16,14 +17,7 @@ layout: default
     <p class="profile-status">Status: caffeinated and mapping odd attack surfaces.</p>
   </div>
   <div class="profile-body">
-    <p>I bounce between adversary emulation, OSINT rabbit holes, and tool-smithing for friends who need answers quickly. Everything eventually lands here once it's stable enough to share.</p>
-    <div class="profile-tags">
-      <span class="profile-tag">OSINT</span>
-      <span class="profile-tag">Automation</span>
-      <span class="profile-tag">Recon</span>
-      <span class="profile-tag">Adversary Sim</span>
-      <span class="profile-tag">Builder</span>
-    </div>
+    <p>I bounce between bug bounty, OSINT rabbit holes, and CTF brainrot. If a messy little script actually works twice in a row, it ends up here.</p>
     <div class="profile-actions">
       <a class="button" href="{{ '/resources/' | relative_url }}">Cheat Sheets</a>
       <a class="button" href="{{ '/tools/' | relative_url }}">Tools</a>
@@ -65,6 +59,7 @@ layout: default
     <li><a href="https://noobosaurusr3x.fr/" target="_blank" rel="noopener">Personal website</a></li>
     <li><a href="https://www.youtube.com/c/NoobosaurusR3x" target="_blank" rel="noopener">YouTube – NoobosaurusR3x</a></li>
     <li><a href="https://www.youtube.com/@HacktBack" target="_blank" rel="noopener">YouTube – HacktBack</a></li>
+    <li><a href="https://github.com/noobosaurus-r3x" target="_blank" rel="noopener">GitHub – noobosaurus-r3x</a></li>
     <li><a href="https://twitter.com/NoobosaurusR3x" target="_blank" rel="noopener">X (Twitter)</a></li>
     <li><a href="https://www.linkedin.com/in/noobosaurus-r3x-683783231/" target="_blank" rel="noopener">LinkedIn</a></li>
   </ul>
