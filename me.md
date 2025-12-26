@@ -36,25 +36,25 @@ layout: default
   <div class="profile-card">
     <h2>What I'm hacking on</h2>
     <ul class="muted-list">
-      <li>Automating recon runs so engagements start with a map, not a guess.</li>
-      <li>Tracking exposed credentials and rogue infrastructure with OSINT pipelines.</li>
-      <li>Packaging weird scripts into cheat sheets and tools for other tinkerers.</li>
+      <li>Bug bounty, recon, OSINT, CTFs, LLM tinkering… basically anything fun and slightly cursed.</li>
+      <li>Turning “huh, that’s weird” into repeatable recon runs (so I can be lazy later).</li>
+      <li>Building tools that absolutely work… just don’t zoom in on the code.</li>
     </ul>
   </div>
   <div class="profile-card">
-    <h2>How I work</h2>
+    <h2>How I roll</h2>
     <ul class="muted-list">
-      <li>Prototype in Python/Bash, glue APIs together, and keep the UX terminal-first.</li>
-      <li>Blend red-team curiosity with blue-team empathy so findings are usable.</li>
-      <li>Document every rabbit hole so others can reproduce or remix it.</li>
+      <li>Motto: “L3 H4ck3r L3 Plu5 n00b Du w3b.”</li>
+      <li>I write crappy code on purpose (ok not on purpose) but it gets the job done.</li>
+      <li>Terminal-first, Python/Bash, lots of duct tape, lots of laughs.</li>
+      <li>Religion: Take notes. Because future me is a stranger.</li>
     </ul>
   </div>
   <div class="profile-card">
     <h2>Signal boost</h2>
     <ul class="muted-list">
-      <li>HacktBack on YouTube for live experiments and commentary.</li>
-      <li>NoobosaurusR3x channel for explainers, walkthroughs, and release notes.</li>
-      <li>Always open to CTF collabs, podcast chats, or weird research requests.</li>
+      <li>HacktBack (YouTube): long interviews with cybersecurity pros + Francophone cyber events coverage.</li>
+      <li>Noobosaurus (YouTube): tutorials, walkthroughs, and “here’s what worked (and what exploded)” videos.</li>
     </ul>
   </div>
 </div>
