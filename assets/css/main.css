@@ -46,10 +46,8 @@ body {
 .logo-avatar {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  border: 1px solid var(--accent);
+  border-radius: 8px;
   object-fit: cover;
-  box-shadow: none;
 }
 
 .logo-meta {
@@ -217,22 +215,119 @@ img {
   box-shadow: 0 0 8px rgba(82, 255, 115, 0.3);
 }
 
-.profile-panel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.profile-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
   align-items: center;
 }
 
-.profile-avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid var(--accent);
-  object-fit: cover;
+.profile-avatar-wrap {
+  text-align: center;
 }
 
-.profile-links {
-  flex: 1;
-  min-width: 240px;
+.profile-avatar {
+  width: clamp(160px, 25vw, 240px);
+  height: clamp(160px, 25vw, 240px);
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(82, 255, 115, 0.25);
+}
+
+.profile-status {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--warning);
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.profile-tag {
+  border: 1px solid var(--accent);
+  padding: 0.15rem 0.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: rgba(82, 255, 115, 0.12);
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.profile-card {
+  border: 1px dashed var(--accent);
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 12px rgba(82, 255, 115, 0.15);
+}
+
+.profile-card h2 {
+  margin-top: 0;
+  color: var(--warning);
+}
+
+.muted-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.muted-list li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.muted-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.profile-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.profile-links li {
+  margin: 0;
+}
+
+.profile-links a {
+  display: block;
+  border: 1px solid var(--accent);
+  padding: 0.75rem;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(82, 255, 115, 0.4);
 }
