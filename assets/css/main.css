@@ -186,7 +186,8 @@ img {
 }
 
 .panel img {
-  max-width: 100%;
+  max-width: min(100%, 640px);
+  width: 100%;
   height: auto;
   border: 1px solid var(--accent);
   box-shadow: 0 0 8px rgba(82, 255, 115, 0.3);
